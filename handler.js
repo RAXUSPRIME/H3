@@ -375,7 +375,7 @@ export async function handler(chatUpdate) {
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${name}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${m.text}\n\n*—◉ 𝙴𝚁𝚁𝙾𝚁:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
+                            m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${name}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${m.text}\n\n*—◉ 𝙴𝚁𝚁𝙾𝚁:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] AVISA 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
                     }
                 }
             }
@@ -496,7 +496,7 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy cantidad*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎. 💎 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy cantidad*`, m)
+                    this.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀S 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀S 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy cantidad*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎. 💎 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy cantidad*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
@@ -641,11 +641,11 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂uay | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😼*') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://youtu.be/dfc4akKNn6A', '❍͜͡➣𝐇𝐀𝐃𝐄𝐒_𝐁𝐎𝐓_𝐌𝐃❍͜͡➣', null, null, [
-                            [(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 💖✨ | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 😔 | 𝘽𝙮𝙚'), '.s'],    
+                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://youtu.be/dfc4akKNn6A', '❍͜͡➣PUTO_𝐁𝐎𝐓❍͜͡➣', null, null, [
+                            [(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞ó al grupo | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 del grupo 😔 | 𝘽𝙮𝙚'), '.s'],    
                             ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
                             ], '', { mentions: [user]})
                            }
@@ -719,16 +719,16 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo lo puede usar Mí Creador(a)!!*_\n_*¡¡This command can only be used by My Creator!!*_',
-        owner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Mí Creador(a) de Bot!!*_\n_*¡¡This command can only be used by Owner Bot!!*_',
-        mods: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Moderador(es) y Mí Creador(a)!!*_\n_*¡¡This command can only be used by Moderator!!*_',
-        premium: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para miembros Premium y Mí Creador(a)!!*_\n_*¡¡This command is only for Premium members!!*_',
+        rowner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo lo puede usar el Creador!!*_\n_*¡¡This command can only be used by the Creator!!*_',
+        owner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por el Creador del Bot!!*_\n_*¡¡This command can only be used by the Owner Bot!!*_',
+        mods: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por administradores y el creador!!*_\n_*¡¡This command can only be used by Admins!!*_',
+        premium: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para miembros Premium y el Creador(a)!!*_\n_*¡¡This command is only for Premium members!!*_',
         group: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en grupos!!*_\n_*¡¡This command can only be used in groups!!*_',
         private: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en el chat privado del Bot!!*_\n_*¡¡This command can only be used in private chat*_',
         admin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para Administradores!!*_\n_*¡¡This command is for Administrators only!!*_',
-        botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Haz que Yo (Bot) sea Administrador para usar este comando!!*_\n_*¡¡Make the bot an Admin to use this command!!*_',
-        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡Qué esperas para estar Verificando(a) en GataBot-MD! Usa el comando #verificar*_\n_*What are you waiting for to be Verifying with GataBot-MD! Use the #verify command*_',
-        restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Esta función está Restringida | disable por Mí Creador(a)!!*_\n_*¡¡This feature is off | disable!!*_'
+        botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Haz que yo sea Administrador para usar este comando!!*_\n_*¡¡Make me an Admin to use this command!!*_',
+        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*Usa el comando #verificar*_\n_*Use the #verify command*_',
+        restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Esta función está Restringida | disable por el Creador(a)!!*_\n_*¡¡This feature is off | disable!!*_'
     }[type]
     if (msg) return m.reply(msg)
 }
