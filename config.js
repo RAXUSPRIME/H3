@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰
 global.owner = [
-  ['32460242838', 'HADES_BOT', true],
+  ['32460242838', 'PUTO_BOT', true],
   ['34622434844'],
   ['32460248740'],
   ['34653556366'],
@@ -12,7 +12,7 @@ global.owner = [
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 global.mods = [] 
-global.prems = ['5212411347465'], 
+global.prems = ['32460212670'], 
 
 global.APIs = { // API Prefix.
   
@@ -70,18 +70,18 @@ global.APIKeys = { // APIKey Here
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = 'HADES_BOT'
-global.author = 'YOVANI'
+global.packname = 'PUTO_BOT'
+global.author = 'MCA'
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.0.30'
+global.vs = '2.0.10'
 global.version = vs
 
-global.gt = 'HADES_BOT'
+global.gt = 'PUTO_BOT'
 global.gatabot = gt
 
 global.yt = 'https://youtub'
@@ -118,7 +118,7 @@ global.informacion = iig
 global.fg = '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n'
 global.fallo = fg
 
-global.mg = '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n'
+global.mg = '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎ASTE 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n'
 global.mal = mg
 
 global.eeg = '╰⊱📩⊱ *𝙍𝙀𝙋𝙊𝙍𝙏𝙀 | 𝙍𝙀𝙋𝙊𝙍𝙏* ⊱📩⊱╮\n\n'
@@ -133,8 +133,8 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
-global.wm = '𝐘𝐎𝐕𝐀𝐍𝐈 𝐎𝐅𝐈𝐂𝐈𝐀𝐋|𝐘𝐇𝐀𝐃𝐄𝐒_𝐁𝐎𝐓'
-global.igfg = '𝐇𝐀𝐃𝐄𝐒_𝐁𝐎𝐓'
+global.wm = 'MCA 𝐎𝐅𝐈𝐂𝐈𝐀𝐋|PUTO_𝐁𝐎𝐓'
+global.igfg = 'PUTO_𝐁𝐎𝐓'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
