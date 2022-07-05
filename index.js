@@ -14,20 +14,20 @@ const require = createRequire(__dirname) // Bring in the ability to create the '
 const { name, author } = require(join(__dirname, './package.json')) // https://www.stefanjudis.com/snippets/how-to-import-json-files-in-es-modules-node-js/
 const rl = createInterface(process.stdin, process.stdout)
 
-say('HADES_BOT_MD\nYOVANI\nHADES_BOT_MD', {
+say('PUTO_BOT\nMCA\nPUTO_BOT_', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`EL MEJOR BOT DE WHATSAPP 2022 LA MEJOR CALIDAD Y SERVICIO DE WHATSAPP HADES_BOT
+say(`EL BOT MÁS PUÑETERO DE WHATSAPP - PUTO_BOT
 |< ================================================== >|
 [•]-SERVIDOR : PRIVADO
 [•]-BOT VERSION : 10.8.9
 [•]-ESTADO : ACTIVO
-[•]-Owner : YOVANI
-[•]-GRACIAS POR USAR LE BOT DE HADES 
-[•]-SUBSCRIBETE LA CANAL YOUTUBE 
-[•]-CERRADO EL BOT YOVANI
+[•]-Owner : MCA
+[•]-GRACIAS POR USAR EL PUTO BOT 
+[•]-QUE LO DISFRUTES 
+[•]-CERRADO EL BOT
 |< ================================================== >|`, {
   font: 'console',
   align: 'center',
@@ -68,7 +68,7 @@ function start(file) {
   })
   p.on('exit', (_, code) => {
     isRunning = false
-    console.error('❎ㅤOcurrio un error inesperado:', code)
+    console.error('❎ㅤHubo un error inesperado:', code)
     if (code === 0) return
     watchFile(args[0], () => {
       unwatchFile(args[0])
